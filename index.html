@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cambio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="text-center">
+    <h1 >CONVERTITORE DI VALUTA</h1>
+    <div class="mx-auto fs-4 user-select-none">
+        <!-- toggle off (inizialmente)-->
+        <i onclick="darkmode()" id="toggle" class="bi bi-toggle-off"></i>
+
+        <p class="d-inline">darkmode</p>
+    </div>
+
+    <div class="m-4 euro">
+        <h3>EURO</h3>
+        <img src="./images/europa.svg">
+        <form action="" class="m-3">
+            <input oninput="cambio()" id="cifra" type="number">
+        </form>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-sm-4 valuta">
+            <h3>DOLLARO AMERICANO</h3>
+            <img src="./images/usa.webp">
+            <p id="dollaro">0 $</p>
+        </div>
+
+        <div class="col-sm-4 d-flex flex-column justify-content-evenly valuta">
+            <h3>YEN</h3>
+            <img src="./images/giappone.svg" class="mx-auto">
+            <p id="yen">0 ¥</p>
+        </div>
+
+        <div class="col-sm-4 valuta">
+            <h3>STERLINA</h3>
+            <img src="./images/uk.webp">
+            <p id="sterlina">0 £</p>
+        </div>
+
+        
+    </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
